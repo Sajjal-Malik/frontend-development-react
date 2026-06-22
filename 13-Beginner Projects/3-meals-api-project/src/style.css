@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.card {
+    background: rgb(255, 249, 249);
+    font-size: 12px;
+    color: rgb(68, 68, 68);
+    margin: 10px;
+    padding: 30px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+p {
+    font-weight: bold;
+}
+
+img {
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+/* Container layout using CSS Grid for responsiveness */
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 24px;
+    background-color: #f9f9f9;
+}
+
+/* Individual Card Styling */
+.category-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Image section */
+.card-image-wrapper {
+    background-color: #f5f5f5;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+/* Text & Button content wrapper */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.card-description {
+    margin: 0 0 20px 0;
+    font-size: 0.9rem;
+    color: #718096;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* Interactive CTA Button */
+.card-btn {
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #e04e33;
+}
