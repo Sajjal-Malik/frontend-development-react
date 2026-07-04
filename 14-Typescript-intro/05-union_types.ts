@@ -15,9 +15,9 @@ function formatId(id: string | number) {
 
 
 
-type Direction = "North" | "South" | "East" | "West";
+type AllDirections = "North" | "South" | "East" | "West";
 
-let move: Direction = "North"; // Okay
+let move: AllDirections = "North"; // Okay
 // let wrongMove: Direction = "Up"; // Error
 
 

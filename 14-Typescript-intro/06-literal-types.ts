@@ -6,9 +6,9 @@ anyString = "world";
 // exactString = "world"; // Error
 
 
-type Navigate = "North" | "South" | "East" | "West";
+type AllNavigation = "North" | "South" | "East" | "West";
 
-function shift(dir: Direction) {
+function shift(dir: AllNavigation) {
     console.log(`Moving ${dir}`);
 }
 

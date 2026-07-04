@@ -34,9 +34,9 @@ type AccountDetails = {
     password?: string
 };
 
-type Employee = UserInfo & AccountDetails;
+type NewEmployee = UserInfo & AccountDetails;
 
-const emp1: Employee = {
+const emp1: NewEmployee = {
     first: "Employee",
     last: "One",
     age: 20,

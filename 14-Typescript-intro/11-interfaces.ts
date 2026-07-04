@@ -110,3 +110,27 @@ class Car implements Vehicle {
 const carObj = new Car();
 carObj.startEngine();
 carObj.stopEngine();
+
+
+
+interface NewCar {
+    brand: string;
+    start(): void;
+}
+
+interface NewCar {
+    model: string;
+    stop(): void;
+}
+
+
+const myCar: NewCar = {
+    brand: "Bugatti",
+    model: "Chiron",
+    start() {
+        console.log('Start');
+    },
+    stop() {
+        console.log('Stop');
+    }
+}
